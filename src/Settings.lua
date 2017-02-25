@@ -1,6 +1,6 @@
 print("---çSetting configuration of Apache---")
 print("---Version 0.5---")
-print("çName of index file(With extension, index.php, news.php...)")
+print("Name of index file (With extension, index.php, news.php...)")
 index = io.read()
 print("êExtension of file in project (ÅWithout dot php, html, phtml, xhtml...)")
 ext = io.read()
