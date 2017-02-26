@@ -1,33 +1,33 @@
-print("---çSetting configuration of Apache---")
+print("---Setting configuration of Apache---")
 print("---Version 0.5---")
 print("Name of index file (With extension, index.php, news.php...)")
 index = io.read()
-print("êExtension of file in project (ÅWithout dot php, html, phtml, xhtml...)")
+print("Extension of file in project (–ÉWithout dot php, html, phtml, xhtml...)")
 ext = io.read()
-print("êAllow CGI scripts [Y/Nç]?")
+print("Allow CGI scripts [Y/N]?")
 cgi = io.read()
-print("èShow content of folder, if wihtout index file†[Y/N]?")
+print("–èShow content of folder, if wihtout index file¬†[Y/N]?")
 indexes = io.read()
-print("êAllow run SSI scripts [Y/N]?")
+print("—íAllow run SSI scripts [Y/N]?")
 ssi = io.read()
 ------------------------------------
 if cgi == "Y" then 
 	cgi = "+ExecCGI"
-elseif cgi == "Nç" then
+elseif cgi == "N" then
 	cgi = "-ExecCGI"
 else
 end
 -----------------------------------
 if indexes == "Y" then 
 	indexes = "+Indexes"
-elseif indexes == "çN" then
+elseif indexes == "N" then
 	indexes = "-Indexes"
 else
 end
 ------------------------------------
 if ssi == "Y" then 
 	ssi = "+Includes"
-elseif ssi == "çN" then
+elseif ssi == "N" then
 	ssi = "-Includes"
 else
 end
